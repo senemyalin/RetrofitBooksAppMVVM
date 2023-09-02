@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs")
     id("kotlin-kapt")
-
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -64,5 +64,9 @@ dependencies {
     implementation ("com.github.zladnrms:RoundableLayout:1.1.3")
 
     implementation ("com.github.chuckerteam.chucker:library:4.0.0")
+
+    implementation("com.google.dagger:hilt-android:2.47")
+    kapt("com.google.dagger:hilt-compiler:2.47")
+
 
 }
